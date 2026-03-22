@@ -1,13 +1,16 @@
-# PSK AND QPSK
 # Aim
 Write a simple Python program for the modulation and demodulation of PSK and QPSK.
 # Tools required
-Google Collab
+Google colab
+
+
+Python
+# THEORY
+Phase Shift Keying (PSK) is a digital modulation technique where the phase of a carrier signal is varied according to digital data, improving noise immunity and bandwidth efficiency compared to amplitude-based methods. In Binary PSK (BPSK), the carrier phase is shifted between two states (0° and 180°) to represent binary ‘0’ and ‘1’, making it simple, highly reliable, and robust even in noisy channels. Quadrature Phase Shift Keying (QPSK) extends this by using four distinct phase shifts (0°, 90°, 180°, 270°), allowing the transmission of 2 bits per symbol, effectively doubling the data rate of BPSK without increasing bandwidth. QPSK provides an excellent balance of spectral efficiency, error performance, and power usage, making it widely used in modern communication systems such as Wi-Fi, satellite links, and cellular networks.
 # Program
 
-# PSK
+# PSK 
 ```
-#PSK 
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.signal import butter, lfilter
@@ -62,9 +65,9 @@ plt.tight_layout()
 plt.show()
 
 ```
-# QPSK
+
+# QPSK 
 ```
-#QPSK 
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -142,20 +145,21 @@ plt.tight_layout()
 plt.grid(True)
 plt.show()
 ```
-
-
 # Output Waveform
+PSK
 
-# PSK
 
-<img width="1190" height="790" alt="image" src="https://github.com/user-attachments/assets/ebd5b6fd-9601-43cc-9a8d-7aa31214b62e" />
+<img width="1190" height="790" alt="image" src="https://github.com/user-attachments/assets/020755c1-2534-4756-b917-dfd514ab4257" />
 
-# QPSK
 
-<img width="989" height="590" alt="image" src="https://github.com/user-attachments/assets/2f1c8501-9874-405f-a6ff-bc920097b134" />
+
+QPSK
+
+
+<img width="989" height="590" alt="image" src="https://github.com/user-attachments/assets/01705fa4-cfa8-47be-a893-423a29c26a67" />
+
+
+
 
 # Results
-
 Thus the simple Python program for the modulation and demodulation of PSK and QPSK is done and verified.
-
-
